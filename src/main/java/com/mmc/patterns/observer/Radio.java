@@ -1,21 +1,15 @@
 package com.mmc.patterns.observer;
 
 public class Radio implements Media, Observer {
-    private LottoLotsSource lottoLotsSource;
-
-    public Radio(LottoLotsSource lottoLotsSource) {
-        this.lottoLotsSource = lottoLotsSource;
-    }
 
     @Override
-    public void informAboutLottoDrawLots() {
-        Integer[] lots = lottoLotsSource.getLots();
+    public void informAboutLottoDrawLots(Integer[] lots) {
         LotsPrinter.displayLots(lots);
     }
 
     @Override
-    public void update() {
-        informAboutLottoDrawLots();
+    public void update(Integer[]lots) {
+        informAboutLottoDrawLots(lots);
     }
 
 }

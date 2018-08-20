@@ -11,9 +11,9 @@ public class Subject {
         this.observers = new ArrayList<>();
     }
 
-    public void notifyObservers(){
+    public void notifyObservers(Integer[] lots){
         for (Observer observer : observers) {
-            observer.update();
+            observer.update(lots);
         }
     }
 

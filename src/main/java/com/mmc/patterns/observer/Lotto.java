@@ -2,24 +2,18 @@ package com.mmc.patterns.observer;
 
 import java.util.Random;
 
-public class Lotto extends Subject implements Drawable, LottoLotsSource {
-
-    private Integer[] lots;
+public class Lotto extends Subject implements Drawable {
 
     @Override
     public void drawLots() {
         Random ran = new Random();
-        lots = new Integer[6];
+        Integer[] lots = new Integer[6];
         for (int i = 0; i < 6; i++) {
             int num = ran.nextInt(49) + 1;
             lots[i] = num;
         }
 
-        notifyObservers();
+        notifyObservers(lots);
     }
 
-    @Override
-    public Integer[] getLots() {
-        return lots;
-    }
 }

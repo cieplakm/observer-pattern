@@ -5,8 +5,8 @@ public class ObserverApp {
     public static void main(String[] args) {
         Lotto lotto = new Lotto();
 
-        Media radio = new Radio(lotto);
-        Media tvp1TV = new TVP1TV(lotto);
+        Media radio = new Radio();
+        Media tvp1TV = new TVP1TV();
 
         lotto.registerObserver((Observer) radio);
         lotto.registerObserver((Observer) tvp1TV);
