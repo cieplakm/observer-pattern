@@ -1,9 +1,0 @@
-com\mmc\patterns\observer\Media.class
-com\mmc\patterns\observer\Radio.class
-com\mmc\patterns\observer\Drawable.class
-com\mmc\patterns\observer\TVP1TV.class
-com\mmc\patterns\observer\Lotto.class
-com\mmc\patterns\observer\LotsPrinter.class
-com\mmc\patterns\observer\ObserverApp.class
-com\mmc\patterns\observer\Subject.class
-com\mmc\patterns\observer\Observer.class
